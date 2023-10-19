@@ -9,7 +9,9 @@ export const theme = {
     x: '',
     m: '',
     l: '',
-    xl: '',
+    xl: '28',
+    xxl: '40px',
+    xxxl: '80px'
   },
   screens: {
     sm: '',
