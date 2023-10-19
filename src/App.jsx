@@ -1,7 +1,5 @@
+import Router from "./Router";
+
 export default function App() {
-  return (
-    <>
-      <h1>lets go</h1>
-    </>
-  );
+  return <Router />
 }
