@@ -4,21 +4,15 @@ import illustration1 from "../../assets/ilustration1.png";
 import logowmd from "../../assets/logowmd.svg";
 import HeroLabel from "../../components/heroLabel";
 import Header from "../../components/header";
+import NavBar from "../../components/navBar";
 
 export default function Home() {
   return (
     <>
       <Header />
       <Spacer $s="36px"/>
-
-      <nav>
-        <Flex $h="end">
-          <button>início</button>
-          <button>contato</button>
-          <button>projetos</button>
-          <button>sobre</button>
-        </Flex>
-      </nav>
+      <NavBar />
+      <Spacer $s="36px"/>
 
       <Flex>
       <section>
