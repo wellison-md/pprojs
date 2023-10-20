@@ -16,7 +16,7 @@ export const Bubble2 = styled.div`
   z-index: -99;
   filter:blur(60px);
   opacity: 0.85;
-`;
+  `;
 
 export const Bubble3 = styled.div`
   position: absolute;
@@ -25,4 +25,9 @@ export const Bubble3 = styled.div`
   z-index: -100;
   filter:blur(50px);
   opacity: 0.3;
-`;
+
+  @media(max-width: ${({ theme }) => theme.screens.lg }) {
+    right: 0;
+    filter: blur(30);
+  }
+  `;

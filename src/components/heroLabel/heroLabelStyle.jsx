@@ -20,4 +20,19 @@ export const HeroLabelContainer = styled.div`
     margin-top: -15px;
     margin-left: 20px;
   }
+
+  @media(max-width: ${({ theme }) => theme.screens.lg }) {
+    h1 {
+      font-size: 48px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-top: -5px;
+    }
+
+    img {
+      max-height: 80px;
+    }
+  }
 `;

@@ -8,6 +8,7 @@ import NavBar from "../../components/navBar";
 import Bio from "../../components/bio";
 import Button from "../../components/common/button";
 import Bg from "../../components/bg";
+import Image from "../../components/common/Image";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <NavBar />
       <Spacer $s="56px" />
 
-      <Flex>
+      <Flex $v="flex-start">
         <section>
           <Flex>
             <img width="110px" src={logowmd} alt="logo" />
@@ -36,7 +37,7 @@ export default function Home() {
         </section>
 
         <section>
-          <img width="750px" src={illustration1} alt="illustration" />
+          <Image width="750px" src={ illustration1 } alt="illustration" />
         </section>
       </Flex>
     </>
