@@ -1,6 +1,7 @@
 import bubble1 from '../../assets/bubble1.svg';
 import bubble2 from '../../assets/bubble2.svg';
-import { Bubble1, Bubble2 } from './bgStyle';
+import bubble3 from '../../assets/bubble3.svg';
+import { Bubble1, Bubble2, Bubble3 } from './bgStyle';
 
 export default function Bg() {
   return (
@@ -12,6 +13,10 @@ export default function Bg() {
       <Bubble2>
         <img src={ bubble2 } alt="" />
       </Bubble2>
+
+      <Bubble3>
+        <img src={ bubble3 } alt="" />
+      </Bubble3>
     </>
   );
 }

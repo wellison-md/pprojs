@@ -14,6 +14,15 @@ export const Bubble2 = styled.div`
   bottom: 0;
   right: 0;
   z-index: -99;
-  filter:blur(200px);
+  filter:blur(60px);
   opacity: 0.85;
+`;
+
+export const Bubble3 = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  z-index: -100;
+  filter:blur(50px);
+  opacity: 0.3;
 `;
