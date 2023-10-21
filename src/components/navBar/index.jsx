@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <NavBarcontainer>
       <Flex $h="end">
-        <NavButton isActive>início</NavButton>
+        <NavButton $isActive>início</NavButton>
         <NavButton>contato</NavButton>
         <NavButton>projetos</NavButton>
         <NavButton>sobre</NavButton>

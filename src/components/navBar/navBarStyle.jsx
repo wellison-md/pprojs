@@ -7,7 +7,7 @@ export const NavBarcontainer = styled.div`
 export const NavButton = styled.button`
   background-color: transparent;
   border: none;
-  border-bottom: ${(props) => props.isActive ?
+  border-bottom: ${(props) => props.$isActive ?
     `5px solid ${props.theme.colors.secondary}` : 'none'};
   border-radius: 8px 8px 0 0;
   font-size: 20px;
