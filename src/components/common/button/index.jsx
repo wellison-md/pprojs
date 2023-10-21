@@ -17,11 +17,11 @@ export default function Button({ $bgcolor, $fsize, $label }) {
 Button.propTypes = {
   $bgcolor: PropTypes.string,
   $fsize: PropTypes.string,
-  $label: PopStateEvent,
+  $label: PropTypes.string,
 }
 
 Button.defaultProps = {
   $bgcolor: theme.colors.main,
-  $fsize: theme.sizes,
+  $fsize: '16px',
   $label: 'Click me',
 }

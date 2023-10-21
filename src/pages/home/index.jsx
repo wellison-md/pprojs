@@ -11,6 +11,7 @@ import Bg from "../../components/bg";
 import Image from "../../components/common/Image";
 
 export default function Home() {
+
   return (
     <>
       <Bg />
@@ -22,7 +23,7 @@ export default function Home() {
       <Flex $v="flex-start">
         <section>
           <Flex>
-            <img width="110px" src={logowmd} alt="logo" />
+            <img width="110px" src={ logowmd } alt="logo" />
 
             <section>
               <HeroLabel
