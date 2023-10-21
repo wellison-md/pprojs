@@ -4,12 +4,16 @@ import PropTypes from 'prop-types';
 
 export default function GlobalStore({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isEnglish, setIsEnglish] = useState(false);
 
   const changeTheme = () => setIsDarkMode(!isDarkMode);
+  const changeLanguage = () => setIsEnglish(!isEnglish);
 
   const INITIAL_STATE = {
     isDarkMode,
     changeTheme,
+    isEnglish,
+    changeLanguage,
   };
 
   return (
