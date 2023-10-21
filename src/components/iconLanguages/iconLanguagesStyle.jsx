@@ -9,4 +9,9 @@ export const IconContainer = styled.div`
     max-width: 28px;
     max-height: 28px;
   }
+
+  & p {
+    color: #666;
+    margin-left: 8px;
+  }
 `;

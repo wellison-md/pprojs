@@ -1,14 +1,21 @@
-import PropTypes from 'prop-types';
+import { useContext } from 'react';
 import { IconContainer } from './iconLanguagesStyle';
+import iconbr from '../../assets/iconbr.svg';
+import iconus from '../../assets/iconus.svg';
+import store from '../../context/store';
+import Flex from '../common/flex';
 
-export default function IconLanguages({ image }) {
+export default function IconLanguages() {
+  const { isEnglish, changeLanguage } = useContext(store);
+  const icon = isEnglish ? iconus : iconbr;
+  const label = isEnglish ? 'EN-US' : 'PT-BR';
+
   return (
-    <IconContainer>
-      <img src={ image } alt="icon language" />
+    <IconContainer onClick={ () => changeLanguage() }>
+      <Flex>
+        <img src={ icon } alt={ label } />
+        <p>{ label }</p>
+      </Flex>
     </IconContainer>
   );
-}
-
-IconLanguages.propTypes = {
-  image: PropTypes.string,
 }
