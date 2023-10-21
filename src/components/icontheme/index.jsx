@@ -1,17 +1,17 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { IconThemeContainer } from "./iconThemeStyle";
 import iconDarkMode from "../../assets/iconDarkMode.svg";
 import iconLightMode from "../../assets/iconLightMode.svg";
-import { IconThemeContainer } from "./iconThemeStyle";
+import store from "../../context/store";
 
 export default function IconTheme() {
-  const [isDark, setIsDark] = useState(false);
+  const { isDarkMode, changeTheme } = useContext(store);
 
-  const handleClick = () => setIsDark(!isDark);
+  const icon = isDarkMode ? iconLightMode : iconDarkMode;
 
-  const icon = isDark ? iconLightMode : iconDarkMode;
   return (
     <IconThemeContainer>
-      <img src={ icon } alt="" onClick={ () => handleClick() }/>
+      <img src={ icon } alt="" onClick={ () => changeTheme() }/>
     </IconThemeContainer>
   );
 }
