@@ -9,8 +9,11 @@ import Bio from "../../components/bio";
 import Button from "../../components/common/button";
 import Bg from "../../components/bg";
 import Image from "../../components/common/Image";
+import { useContext } from "react";
+import store from "../../context/store";
 
 export default function Home() {
+  const { currentLang } = useContext(store);
 
   return (
     <>
@@ -28,13 +31,13 @@ export default function Home() {
             <section>
               <HeroLabel
                 title="Wellison M. Dias"
-                subTitle="<Desenvolvedor Web/>"
+                subTitle={ currentLang.pages.home.role }
               ></HeroLabel>
             </section>
           </Flex>
 
           <Bio />
-          <Button $label="Projetos" />
+          <Button $label={ currentLang.pages.home.ctaLabel } />
         </section>
 
         <section>
