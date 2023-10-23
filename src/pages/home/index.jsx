@@ -31,13 +31,13 @@ export default function Home() {
             <section>
               <HeroLabel
                 title="Wellison M. Dias"
-                subTitle={ currentLang.pages.home.role }
+                subTitle={ currentLang?.pages?.home?.role }
               ></HeroLabel>
             </section>
           </Flex>
 
           <Bio />
-          <Button $label={ currentLang.pages.home.ctaLabel } />
+          <Button $label={ currentLang?.pages?.home?.ctaLabel } />
         </section>
 
         <section>

@@ -7,7 +7,7 @@ export default function Bio() {
 
   return (
     <Text>
-      { currentLang.pages.home.bio }
+      { currentLang?.pages?.home?.bio }
     </Text>
   );
 }

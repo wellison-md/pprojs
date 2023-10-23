@@ -9,10 +9,10 @@ export default function NavBar() {
   return (
     <NavBarcontainer>
       <Flex $h="end">
-        <NavButton $isActive>{ currentLang.pages.home.navbar.label1 }</NavButton>
-        <NavButton>{ currentLang.pages.home.navbar.label2 }</NavButton>
-        <NavButton>{ currentLang.pages.home.navbar.label3 }</NavButton>
-        <NavButton>{ currentLang.pages.home.navbar.label4 }</NavButton>
+        <NavButton $isActive>{ currentLang?.pages?.home?.navbar?.label1 }</NavButton>
+        <NavButton>{ currentLang?.pages?.home?.navbar?.label2 }</NavButton>
+        <NavButton>{ currentLang?.pages?.home?.navbar?.label3 }</NavButton>
+        <NavButton>{ currentLang?.pages?.home?.navbar?.label4 }</NavButton>
       </Flex>
     </NavBarcontainer>
   );
