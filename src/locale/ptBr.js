@@ -14,12 +14,15 @@ const PT_BR = {
       ctaLabel: 'Projetos',
     },
     contact: {
+      headline: 'Contato',
 
     },
     projects: {
+      headline: 'Projetos',
 
     },
     about: {
+      headline: 'Sobre'
 
     },
   }
